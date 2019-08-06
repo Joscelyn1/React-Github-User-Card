@@ -1,7 +1,8 @@
 import React from "react";
 
 function Card(props) {
-  return <div>Hello</div>;
+  console.log(props.person, "props.person");
+  return <div>{props.person.login}</div>;
 }
 
 export default Card;
