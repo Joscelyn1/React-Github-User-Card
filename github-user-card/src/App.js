@@ -58,7 +58,7 @@ class App extends React.Component {
         />
         <div className="cardcontainer">
           {this.state.people.map(person => {
-            return <PersonCard person={person} />;
+            return <PersonCard key={person.html_url} person={person} />;
           })}
         </div>
       </div>
