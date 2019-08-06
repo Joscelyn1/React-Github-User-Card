@@ -14,12 +14,11 @@ class App extends React.Component {
     fetch(`https://api.github.com/users/Joscelyn1/followers`)
       .then(response => {
         // first promise resolution is used to format the data.
-        console.log(response, "response");
+
         return response.json();
       })
       .then(response => {
         this.setState({ people: response });
-        console.log(this.state.people, "this.state.people");
       })
       .catch(err => {
         console.log(err);
