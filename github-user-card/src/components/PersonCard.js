@@ -8,7 +8,9 @@ function PersonCard(props) {
       <CardBody>
         <CardTitle>{props.person.login}</CardTitle>
         <p>{props.person.bio}</p>
-        <Button href={props.person.html_url}>Read more &rarr;</Button>
+        <Button theme="success" href={props.person.html_url}>
+          Read more &rarr;
+        </Button>
       </CardBody>
     </Card>
   );

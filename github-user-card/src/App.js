@@ -46,11 +46,16 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <h1>List of GitHub Users</h1>
         <img
           alt="github logo"
           width="300px"
-          src={process.env.PUBLIC_URL + "/github-logo.png"}
+          src={process.env.PUBLIC_URL + "/GitHub_Logo.png"}
+        />
+        <h1>Users</h1>
+        <img
+          alt="github logo"
+          width="300px"
+          src={process.env.PUBLIC_URL + "/Octocat.png"}
         />
         <div className="cardcontainer">
           {this.state.people.map(person => {
