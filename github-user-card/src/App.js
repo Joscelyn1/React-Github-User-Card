@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import Card from "./components/Card.js";
+import PersonCard from "./components/PersonCard.js";
 
 class App extends React.Component {
   constructor() {
@@ -46,9 +46,17 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        {this.state.people.map(person => {
-          return <Card person={person} />;
-        })}
+        <h1>List of GitHub Users</h1>
+        <img
+          alt="github logo"
+          width="300px"
+          src={process.env.PUBLIC_URL + "/github-logo.png"}
+        />
+        <div className="cardcontainer">
+          {this.state.people.map(person => {
+            return <PersonCard person={person} />;
+          })}
+        </div>
       </div>
     );
   }

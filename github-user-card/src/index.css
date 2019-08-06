@@ -11,3 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.App {
+  background-color: #28a745;
+}
+
+.cardcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.person-card {
+  margin: 15px;
+}
+
+@media (min-width: 800px) {
+  .cardcontainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
